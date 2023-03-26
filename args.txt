@@ -1,4 +1,4 @@
 @your we chat name here
 command that trigger the jailbreak ver
 your openai api key here
-your chatbot system setting prompt
+your chatbot system setting prompt, leave it empty if you don't want any
