@@ -49,7 +49,7 @@ def _write_cache(cache_file, data):
 
 def chat(prompt,from_wxid):
     system_header = [{"role": "system", "content": system_setting}]
-    chat_data = _get_cache("chatgpt.json")
+    chat_data = _get_cache("chat_history.json")
     if from_wxid not in chat_data:
         chat_data[from_wxid] = []
     chat_history = chat_data.get(from_wxid)
@@ -76,7 +76,7 @@ def chat(prompt,from_wxid):
     while len(chat_history) > 6:
         chat_history.pop(0)
     chat_data[from_wxid] = chat_history
-    _write_cache("chatgpt.json",chat_data)
+    _write_cache("chat_history.json",chat_data)
     return response.strip()
 
 
