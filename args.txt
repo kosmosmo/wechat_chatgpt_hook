@@ -1,4 +1,4 @@
-@凯文男朋友
-越狱男友
-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
-
+@your we chat name here
+command that trigger the jailbreak ver
+your openai api key here
+your chatbot system setting prompt
