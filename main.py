@@ -1,6 +1,6 @@
 import ntchat,os,json,sys
 import openai
-os.environ['NTCHAT_LOG'] = "ERROR"
+#os.environ['NTCHAT_LOG'] = "ERROR"
 root_path = os.path.dirname(os.path.realpath(__file__)) + '\\'
 wechat = ntchat.WeChat()
 wechat.open(smart=True)
